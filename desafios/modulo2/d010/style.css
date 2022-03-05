@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: droid;
+    src: url(fontes/idroid.otf); 
+}
+#bugdroid{
+    text-decoration: none;
+    color: #2B975A;
+    font-weight: bold;
+
+}
+#dandroids{
+    text-decoration: none;
+    color: #2B975A;
+    font-weight: bold;
+}
+h2 {
+    margin-left: 3px;
+    font-family: droid;
+    font-weight: lighter;
+    color: #000000;
+}
+
+.degrade{
+    background-image: linear-gradient(to right, #3BD580, rgb(255, 255, 255));
+    
+}
+
+p {
+    text-align: justify;
+    margin-left: 1px;
+    text-indent: 22px;
+}
+
+body {
+    background-color: wheat;
+    margin: auto;
+}
+
+main {
+    background-color: white;
+    height: auto;
+    width: 800px;
+    margin: auto;
+    box-shadow: 1px -1px 12px 0px black;
+    padding: 10px;
+}
+
+header {
+    margin: 0px;
+    height: auto;
+    background-image: linear-gradient(to bottom, #3BD580, #000000);
+}
+
+#titulo_principal {
+    text-align: center;
+    margin-top: 1px;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 26px;
+
+}
+
+header >p {
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-align: left;
+    color: rgb(0, 255, 55);
+    margin: 5px ;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.menus:hover{
+    background-color: rgba(255, 255, 255, 0.363);
+}
+div{
+    text-align: center;
+}
+.video_yt{
+    padding: 18px;
+    text-align: center;
+    background-color: #2B975A;
+    margin-right: -20;
+}
+.verde{
+    color: black;
+    background-color: #3BD580;
+}
+
+
+.preto{
+    color: black;
+
+}

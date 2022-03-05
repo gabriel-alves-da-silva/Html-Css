@@ -1,0 +1,31 @@
+@charset "UTF-8";   
+
+body{
+    background-color: black;
+    color: white;
+}
+pre{
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+#voltar{
+    text-align: center;
+}
+#video{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    color: aqua;
+}
