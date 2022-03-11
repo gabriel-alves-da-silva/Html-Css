@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste de imagem</title>
+    <title>Fundo fixaa de tela</title>
 </head>
 <style>
     body{
         height: 100vh;
-        background-color: black;
-        background-image: url('imagens/wallpaper002.jpg');
-        background-repeat: no-repeat;
-        background-position: center center;
+        
+        
+        /*Shorthand - background*/
+
+        /* color > image > position > repeat > [size] > attachment */
+        /*background-size: cover; Não funciona na shorthand*/
+        background: black url('imagens/wallpaper002.jpg' )
+        center center no-repeat fixed; 
         background-size: cover;
+
 
     }
     main{
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border-radius: 15px;
@@ -30,6 +35,11 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, labore est deserunt voluptatibus hic neque mollitia laborum? Velit consequatur veniam eaque pariatur culpa officiis, totam natus ad dolores sequi similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, labore cupiditate tenetur cum rem consequuntur tempora ullam eligendi modi iste minima magni officia libero consectetur maiores tempore quos itaque corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum! Ipsum id veniam obcaecati aspernatur mollitia tenetur culpa nemo nesciunt accusamus sint! Consequatur reprehenderit ratione tempora illo voluptatem eius aliquid!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, labore est deserunt voluptatibus hic neque mollitia laborum? Velit consequatur veniam eaque pariatur culpa officiis, totam natus ad dolores sequi similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, labore cupiditate tenetur cum rem consequuntur tempora ullam eligendi modi iste minima magni officia libero consectetur maiores tempore quos itaque corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum! Ipsum id veniam obcaecati aspernatur mollitia tenetur culpa nemo nesciunt accusamus sint! Consequatur reprehenderit ratione tempora illo voluptatem eius aliquid!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, labore est deserunt voluptatibus hic neque mollitia laborum? Velit consequatur veniam eaque pariatur culpa officiis, totam natus ad dolores sequi similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, labore cupiditate tenetur cum rem consequuntur tempora ullam eligendi modi iste minima magni officia libero consectetur maiores tempore quos itaque corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum! Ipsum id veniam obcaecati aspernatur mollitia tenetur culpa nemo nesciunt accusamus sint! Consequatur reprehenderit ratione tempora illo voluptatem eius aliquid!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, labore est deserunt voluptatibus hic neque mollitia laborum? Velit consequatur veniam eaque pariatur culpa officiis, totam natus ad dolores sequi similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, labore cupiditate tenetur cum rem consequuntur tempora ullam eligendi modi iste minima magni officia libero consectetur maiores tempore quos itaque corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum! Ipsum id veniam obcaecati aspernatur mollitia tenetur culpa nemo nesciunt accusamus sint! Consequatur reprehenderit ratione tempora illo voluptatem eius aliquid!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, labore est deserunt voluptatibus hic neque mollitia laborum? Velit consequatur veniam eaque pariatur culpa officiis, totam natus ad dolores sequi similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, labore cupiditate tenetur cum rem consequuntur tempora ullam eligendi modi iste minima magni officia libero consectetur maiores tempore quos itaque corporis?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, earum! Ipsum id veniam obcaecati aspernatur mollitia tenetur culpa nemo nesciunt accusamus sint! Consequatur reprehenderit ratione tempora illo voluptatem eius aliquid!Lorem</p>
+
     </main>
     
 </body>
