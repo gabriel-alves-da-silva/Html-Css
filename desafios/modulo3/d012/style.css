@@ -1,20 +1,34 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,300&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
 }
+:root{
+    ---fonte1: 'Courier New', Courier, monospace;
+    ---fonte2: 'Libre Baskerville', serif;
+    ---fonte3: 'Red Hat Mono', monospace;
+}
 html, body{
     min-height: 1005vh;
     background-color: darkgray;
+    font-family: var(---fonte1);
 }
 header{
     background-color: black;
     color: white;
     text-align: center;
+    
 }
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(---fonte2);
+    font-size: 10vw;
 }
 header > p{
     padding-bottom: 50px;
@@ -25,6 +39,9 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(---fonte3);
+    font-size: 3.5vw;
+    
 }
 section.normal{
     background-color: rgb(255, 255, 255);
@@ -34,6 +51,7 @@ section.normal{
 section.imagem{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
+    
 }
 
 section .imagem > P{
