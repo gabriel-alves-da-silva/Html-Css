@@ -12,6 +12,7 @@
 
     }
     table{
+        height: 400px;
         width: 400px;
         border-collapse: collapse;
     }
@@ -19,6 +20,11 @@
     td{
         padding: 8px;
         border: 1px solid black;
+        text-align: center; /*Alinhhamento horizontal*/
+        vertical-align: top;/*Alinhamento vertical*/
+    }
+    .numero{
+        text-align: right;
     }
 </style>
 <body>
@@ -32,8 +38,8 @@
 
         <tr> <!--Segunda linha  -->
             <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
+            <td class="numero">B2</td>
+            <td class="numero">C2</td>
         </tr>
 
       <tr>
