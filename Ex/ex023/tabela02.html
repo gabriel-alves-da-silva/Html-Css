@@ -14,14 +14,23 @@
     table{
         width: 400px;
         border-collapse: collapse;
+        position: relative;
     }
     td, th{
         border: solid 1px black;
         padding: 10px;
     }
     thead, tfoot{
-        background-color: gray;
+        background-color: rgb(0, 0, 0);
         color: white;
+    }
+    thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: black;
+    }
+    tbody > tr:nth-child(even){
+        background-color: rgb(160, 160, 160);
     }
     a{
         text-decoration: none;
@@ -33,15 +42,22 @@
     }
     .num{
         text-align: right;
-        color: red;
+        color: rgb(0, 0, 0);
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
     }
 </style>
 <body>
     <table>
+        <caption>População das unidades federativas do brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 88px;">População</th>
 
             </tr>
 
@@ -162,14 +178,14 @@
                 </tr>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">0000</td>
             </tr>
             <tr>
                 <th>Fonte</th>
                 <td><a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Wikipédia</a></td>
             </tr>
-        </tfoot>++++
+        </tfoot>
     </table>
 </body>
 </html>
