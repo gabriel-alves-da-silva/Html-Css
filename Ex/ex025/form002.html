@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+    body{
+        background-color: black;
+        color: rgb(23, 94, 226);
+        text-align: center;
+        font-family: 'Prosto One';
+    }
+    form{
+        border: 2px solid transparent;
+        border-image: linear-gradient(to right, rgb(1, 21, 77), #4D4DFF);
+        border-image-slice: 1;
+        border-radius: 9px 0px 9px 0px;
+        padding: 25px;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        background-position: center;
+        
+
+
+
+    }
+    #enviar{
+        
+        width: 78px;
+        color: rgb(23, 94, 226);
+        margin: auto;
+
+    }
+</style>
+<body>
+
+        <form action="cadastro.php" method="post">
+            <h1>PLugoBr</h1>
+            <p>
+                <label for="user">Nome</label><br>
+
+                <input type="text" name="user" id="user" minlength="5" maxlength="15" autocomplete="username" size="20" placeholder="Usuario">
+                
+            </p>
+            <p>
+                <label for="senha">Senha</label><br>
+                <input type="text" name="senha" id="senha" minlength="8" autocomplete="current-password" size="20" placeholder="Senha" >
+            </p>
+            <p id="enviar">
+                <input type="submit" value="Enviar" >
+                 
+            </p>
+        </form>
+    
+    
+</body>
+</html>
