@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    fieldset{
+        text-align: center;
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+        background-color: white;
+         
+    }
+</style>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset> 
+            <!-- dados pessoais -->
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="28">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label><br>
+                    <input type="email" name="email"  id="iemail"  autocomplete="email" required>
+            
+            </p>
+            <p>
+                <label for="itel">Telefone</label><br>
+                <input type="tel" placeholder="(XX) XXX-XXX">
+                <!-- E studar mais sobre expressões regulares -->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
