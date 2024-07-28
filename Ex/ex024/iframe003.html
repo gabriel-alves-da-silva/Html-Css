@@ -1,36 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uso de iframes</title>
 </head>
 <style>
     body{
         background-color: black;
-        color: white;
+        color: antiquewhite;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    main{
+        background-color: white;
+        color: black;
+        width: 800px;
+        height: auto;
+        margin: auto;
+        padding: 10px;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-indent: 8px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(130, 76, 231);
+        margin: 5px;
+    }
+    a:hover{
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
     }
     iframe{
-        width: 95vw;
+        width: 750px;
         height: 400px;
-        border: 1px solid white;
+        border: 1px solid black;
+        display: block;
+        margin: auto;
+    }
+    nav{
+       text-align: center;
+       padding: 5px;
+    
+    }
+    #logo{
+        text-align: center;
     }
 </style>
 <body>
-    <h1>Escolha</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis alias tempore molestias maxime tenetur adipisci sit possimus unde. Illum pariatur sequi ipsa vel architecto saepe nemo magni in ipsum beatae?</p>
-    <ul>
-        <li><a href="paginas extras/pag001.html">Primeira pagina</a></li>
-        <li><a href="">segunda pagina</a></li>
-        <li><a href="">Terceira pagina</a></li>
+    <main>
+        <h1>Faça sua escolha</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore hic doloribus voluptates, earum repellat velit illo veniam deleniti atque esse animi sint! Incidunt, animi. Quisquam doloribus voluptatum optio deleniti perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ipsa cum repellat dolores optio blanditiis fugiat natus! Porro facere sapiente tempora fuga, odit, voluptatibus eos dolore nihil ab, minus quia.</p>
         
-    </ul>
-
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero inventore quasi dicta, molestias quisquam cupiditate voluptate, qui ratione laudantium dolorem eius aperiam porro reprehenderit alias aliquid, ipsam itaque ex recusandae.
-    </p>
-    <iframe src="" ></iframe>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut minus illum quasi necessitatibus saepe laboriosam eaque sint exercitationem, vitae dolorem. Officiis laborum cupiditate rerum quam saepe, consequatur atque dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, enim quasi id cupiditate aspernatur vero fugit aut corporis repudiandae quis dolore laboriosam incidunt dolorem fuga debitis, tenetur deserunt tempore veniam?</p>
+        <nav>
+            <a href="paginas extras/pag001.html" target="tela">Primeira pagina</a>
+            <a href="paginas extras/pag002.html" target="tela">Segunda Pagina</a>
+            <a href="paginas extras/pag003.html" target="tela">Terceira pagina</a>
+        </nav>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis id, ut consequatur itaque assumenda quis omnis illum officia expedita molestias voluptatibus ad deserunt dolorum alias vero repellendus sequi. Sequi, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil velit officia ipsam ullam quam modi pariatur laudantium non dolorum voluptate, consequatur accusamus, debitis deleniti voluptatum doloribus. Ab hic a officia!</p>
+        
+        <iframe src="paginas extras/inicio.html" name="tela" scrolling="no"></iframe>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam dolor placeat, deleniti delectus libero similique tenetur dolores? Assumenda quae quaerat nesciunt molestias qui ut eligendi ducimus mollitia consequuntur hic. Nemo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis repudiandae eveniet labore, tenetur sapiente minus amet voluptatem distinctio nobis autem culpa, doloribus corrupti inventore ipsum nesciunt. Nobis sint laborum quaerat?</p>
+    </main>
+    
 </body>
 </html>
